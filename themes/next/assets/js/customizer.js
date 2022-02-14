@@ -6,6 +6,7 @@
  *
  * Contains handlers to make Theme Customizer preview reload changes asynchronously.
  */
+console.log('Customizer')
 
 ( function( $ ) {
 	// Site title and description.
