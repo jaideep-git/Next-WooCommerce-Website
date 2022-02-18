@@ -2206,7 +2206,6 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   color: inherit;
@@ -2992,7 +2991,7 @@ select {
   width: 100%; }
 
 .accordion-menu a {
-  padding: 0.7rem 1rem; }
+  padding: 1rem 0rem; }
 
 .accordion-menu .is-accordion-submenu a {
   padding: 0.7rem 1rem; }
@@ -3464,7 +3463,7 @@ select {
     line-height: 1;
     text-decoration: none;
     display: block;
-    padding: 0.7rem 1rem; }
+    padding: 1rem 0rem; }
   .menu input,
   .menu select,
   .menu a,
@@ -5449,8 +5448,7 @@ a.thumbnail {
   .top-bar ul {
     background-color: #e6e6e6; }
   .top-bar input {
-    max-width: 200px;
-    margin-right: 1rem; }
+    max-width: 200px; }
   .top-bar .input-group-field {
     width: 100%;
     margin-right: 0; }

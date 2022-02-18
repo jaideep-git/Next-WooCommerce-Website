@@ -8,8 +8,8 @@
  */
 
 if ( ! defined( 'NEXT_VERSION' ) ) {
-	// Replace the version number of the theme on each release.
-	define( 'NEXT_VERSION', '1.0.0' );
+  // Replace the version number of the theme on each release.
+    define( 'NEXT_VERSION', '1.0.0' );
 }
 
 /**
@@ -20,73 +20,73 @@ if ( ! defined( 'NEXT_VERSION' ) ) {
  * as indicating support for post thumbnails.
  */
 function next_setup() {
-	/*
-		* Make theme available for translation.
-		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on NextTheme, use a find and replace
-		* to change 'next' to the name of your theme in all the template files.
-		*/
-	load_theme_textdomain( 'next', get_template_directory() . '/languages' );
+/*
+    * Make theme available for translation.
+    * Translations can be filed in the /languages/ directory.
+    * If you're building a theme based on NextTheme, use a find and replace
+    * to change 'next' to the name of your theme in all the template files.
+    */
+load_theme_textdomain( 'next', get_template_directory() . '/languages' );
 
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+  // Add default posts and comments RSS feed links to head.
+add_theme_support( 'automatic-feed-links' );
 
-	/*
-		* Let WordPress manage the document title.
-		* By adding theme support, we declare that this theme does not use a
-		* hard-coded <title> tag in the document head, and expect WordPress to
-		* provide it for us.
-		*/
-	add_theme_support( 'title-tag' );
+/*
+    * Let WordPress manage the document title.
+    * By adding theme support, we declare that this theme does not use a
+    * hard-coded <title> tag in the document head, and expect WordPress to
+    * provide it for us.
+    */
+add_theme_support( 'title-tag' );
 
-	/*
-		* Enable support for Post Thumbnails on posts and pages.
-		*
-		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-		*/
-	add_theme_support( 'post-thumbnails' );
+/*
+    * Enable support for Post Thumbnails on posts and pages.
+    *
+    * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
+    */
+add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus(
-		array(
-			'menu-1' => esc_html__( 'Primary', 'next' ),
-		)
-	);
+  // This theme uses wp_nav_menu() in one location.
+register_nav_menus(
+    array(
+        'menu-1' => esc_html__( 'Primary', 'next' ),
+    )
+);
 
-	/*
-		* Switch default core markup for search form, comment form, and comments
-		* to output valid HTML5.
-		*/
-	add_theme_support(
-		'html5',
-		array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-			'style',
-			'script',
-		)
-	);
+/*
+    * Switch default core markup for search form, comment form, and comments
+    * to output valid HTML5.
+    */
+    add_theme_support(
+    'html5',
+    array(
+        'search-form',
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption',
+        'style',
+        'script',
+        )
+    );
 
-	// Add theme support for selective refresh for widgets.
-	add_theme_support( 'customize-selective-refresh-widgets' );
+  // Add theme support for selective refresh for widgets.
+add_theme_support( 'customize-selective-refresh-widgets' );
 
-	/**
-	 * Add support for core custom logo.
-	 *
-	 * @link https://codex.wordpress.org/Theme_Logo
-	 */
-	add_theme_support(
-		'custom-logo',
-		array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
-		)
-	);
+/**
+   * Add support for core custom logo.
+   *
+   * @link https://codex.wordpress.org/Theme_Logo
+   */
+add_theme_support(
+    'custom-logo',
+    array(
+        'height'      => 250,
+        'width'       => 250,
+        'flex-width'  => true,
+        'flex-height' => true,
+        )
+    );
 }
 add_action( 'after_setup_theme', 'next_setup' );
 
@@ -98,7 +98,7 @@ add_action( 'after_setup_theme', 'next_setup' );
  * @global int $content_width
  */
 function next_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'next_content_width', 640 );
+    $GLOBALS['content_width'] = apply_filters( 'next_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'next_content_width', 0 );
 
@@ -108,17 +108,17 @@ add_action( 'after_setup_theme', 'next_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function next_widgets_init() {
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Sidebar', 'next' ),
-			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'next' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
-		)
-	);
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'Sidebar', 'next' ),
+            'id'            => 'sidebar-1',
+            'description'   => esc_html__( 'Add widgets here.', 'next' ),
+            'before_widget' => '<section id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</section>',
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>',
+        )
+    );
 }
 add_action( 'widgets_init', 'next_widgets_init' );
 
@@ -126,11 +126,30 @@ add_action( 'widgets_init', 'next_widgets_init' );
  * Enqueue scripts and styles.
  */
 function next_scripts() {
-	wp_enqueue_style( 'next-style', get_stylesheet_uri(), array(), NEXT_VERSION );
+    wp_enqueue_style( 'next-style', get_stylesheet_uri(), array(), NEXT_VERSION );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+    wp_enqueue_style('foundation-style', get_template_directory_uri() . '/assets/css/vendor/foundation.css');
+    wp_enqueue_style('main-style', get_template_directory_uri() . '/assets/css/app.css');
+
+    wp_enqueue_script(
+        'what-input-script',
+        get_template_directory_uri() . '/assets/js/vendor/what-input.js',
+        array('jquery'), 
+        false, 
+        true
+    );
+
+    wp_enqueue_script(
+        'foundation-script', 
+        get_template_directory_uri() . '/assets/js/foundation.js', 
+        array('jquery', 'what-input-script'),
+        false, 
+        true
+    );
+
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
+    }
 }
 add_action( 'wp_enqueue_scripts', 'next_scripts' );
 
