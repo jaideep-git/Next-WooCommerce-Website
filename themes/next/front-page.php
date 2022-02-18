@@ -64,9 +64,6 @@ get_header();
             <article class="advertisement">
                 <img src="<?php echo get_template_directory_uri() . '/assets/img/ad.png'?> " alt="">
             </article>
-
-            
-            
         </section>
         
 
