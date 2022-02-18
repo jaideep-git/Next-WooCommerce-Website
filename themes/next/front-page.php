@@ -13,9 +13,8 @@
  */
 
 get_header();
-?>
-
-	<main id="primary" class="site-main">
+?>  
+    <main id="primary" class="site-main">
 		<div class="feature-img">
             <img src="<?php echo get_template_directory_uri() . '/assets/img/feature.png'?>" alt="..">
         </div>
