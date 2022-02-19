@@ -5,3 +5,40 @@
 .wp-block-quote.is-style-fancy-quote {
   color: tomato;
 }
+
+/* List Style */
+
+.block-editor-block-list__block li{
+  list-style: none !important;
+}
+
+/* Table */
+
+.wp-block-table td th tr{
+  background-color: #3D3D3D;
+  border: 1px solid #eee;
+}
+
+
+.wp-block-table tr:nth-child(even) {
+  background-color:rgba(86,119,252,0.4);
+}
+
+.wp-block-search__button {
+  margin:0;
+  background-color:#3452FF;
+  color:white
+}
+
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link{
+  background: transparent !important;
+  color: #3D3D3D !important;
+  
+}
+.wp-block-social-links{
+  font-size:30px !important;
+}
+.wp-block-button__link{
+  background:#3452FF;
+  border-radius: 0;
+}
