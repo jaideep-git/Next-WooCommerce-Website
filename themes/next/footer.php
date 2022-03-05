@@ -61,7 +61,7 @@
 		<p class="text-center footer-copyright"> &copy; Created by a <a href="http://jaideep.ca" target="_blank">Jaideep.</a></p>
 	</footer>
 
-<?php wp_footer(); ?>
+<?php wp_footer();?>
 
 </body>
 </html>
