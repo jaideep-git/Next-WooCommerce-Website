@@ -120,6 +120,57 @@ function next_widgets_init() {
             'after_title'   => '</h2>',
         )
         );
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'social-media-links', 'next' ),
+            'id'            => 'social-media-links',
+            'description'   => esc_html__( 'Add widgets here.', 'next' ),
+        )
+    );
+    register_sidebar(
+        array(
+            'name'             =>   esc_html__( 'footer Widget 1', 'text_domain' ),
+            'id'               =>   'footer-widget-1',
+            'description'	   =>   esc_html__('Column One', 'text_domain'),
+            'before_title'	   =>   '<h3 class="title">',
+            'after_title' 	   =>   '</h3>',
+            'before_widget'	   =>   '<div id="%1$s" class="widget %2$s">',
+            'after_widget'     =>   '</div>'
+        )
+    );
+    register_sidebar(
+        array(
+            'name'             =>   esc_html__( 'footer Widget 2', 'text_domain' ),
+            'id'               =>   'footer-widget-2',
+            'description'	   =>   esc_html__('Column One', 'text_domain'),
+            'before_title'	   =>   '<h4 class="title">',
+            'after_title' 	   =>   '</h4>',
+            'before_widget'	   =>   '<div id="%1$s" class="widget %2$s">',
+            'after_widget'     =>   '</div>'
+        )
+    );
+    register_sidebar(
+        array(
+            'name'             =>   esc_html__( 'footer Widget 3', 'text_domain' ),
+            'id'               =>   'footer-widget-3',
+            'description'	   =>   esc_html__('Column One', 'text_domain'),
+            'before_title'	   =>   '<h4 class="title">',
+            'after_title' 	   =>   '</h4>',
+            'before_widget'	   =>   '<div id="%1$s" class="widget %2$s">',
+            'after_widget'     =>   '</div>'
+        )
+    );
+    register_sidebar(
+        array(
+            'name'             =>   esc_html__( 'footer Widget 4', 'text_domain' ),
+            'id'               =>   'footer-widget-4',
+            'description'	   =>   esc_html__('Column One', 'text_domain'),
+            'before_title'	   =>   '<h4 class="title">',
+            'after_title' 	   =>   '</h4>',
+            'before_widget'	   =>   '<div id="%1$s" class="widget %2$s">',
+            'after_widget'     =>   '</div>'
+        )
+    );
 }
 add_action( 'widgets_init', 'next_widgets_init' );
 
