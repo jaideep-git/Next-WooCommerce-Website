@@ -49,7 +49,8 @@ add_theme_support( 'post-thumbnails' );
   // This theme uses wp_nav_menu() in one location.
 register_nav_menus(
     array(
-        'menu-1' => esc_html__( 'Primary', 'next' ),
+        'menu-primary' => esc_html__( 'Primary', 'next' ),
+        'menu-secondary' => esc_html__( 'Secondary', 'next'),
     )
 );
 
@@ -118,7 +119,7 @@ function next_widgets_init() {
             'before_title'  => '<h2 class="widget-title">',
             'after_title'   => '</h2>',
         )
-    );
+        );
 }
 add_action( 'widgets_init', 'next_widgets_init' );
 
