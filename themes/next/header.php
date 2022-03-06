@@ -28,28 +28,28 @@
 
 	<div class="top-bar">
         <div class="grid-container top-bar">
-            <div class="social-icons">
-                <i class="fab fa-facebook icon"></i>
-                <i class="fab fa-twitter icon"></i>
-                <i class="fab fa-instagram icon"></i>
-                <i class="fab fa-pinterest-p icon"></i>
-            </div>
-            <div class="account-info">
-                <h6>My account</h6>
-                <h6>Wishlist</h6>
-            </div>
+            <?php dynamic_sidebar( 'social-media-links' );?>
+            <?php
+                if ( has_nav_menu('menu-secondary') ){
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'menu-secondary',
+                            'menu_id'        => 'account-info',
+                        )
+                    );
+                }
+            ?>
         </div>
 	</div>
 
 	<header id="masthead" class="site-header">
-        <div class="grid-container top-bar" id="navbar">
+        <div class="grid-container top-bar " id="navbar">
             <div class="logo">
                 <?php the_custom_logo(); ?>
             </div>
             <div class="search-bar">
                 <ul class="menu-bar">
-                    <li><input type="search" placeholder="Search" id="input-bar"></li>
-                    <li><button type="button" class="button" id="search-btn"><i class="fa fa-search"></i></button></li>
+                    <?php aws_get_search_form( true ); ?>
                 </ul>
                 <i class="fas fa-shopping-cart cart-icon"></i>
             </div>
@@ -59,7 +59,7 @@
                 <?php
                 wp_nav_menu(
                     array(
-                        'theme_location' => 'menu-1',
+                        'theme_location' => 'menu-primary',
                         'menu_id'        => 'primary-menu',
                     )
                 );
