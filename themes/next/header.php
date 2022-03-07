@@ -51,7 +51,8 @@
                 <ul class="menu-bar">
                     <?php aws_get_search_form( true ); ?>
                 </ul>
-                <i class="fas fa-shopping-cart cart-icon"></i>
+                <a href="<?php echo wc_get_cart_url(); ?>"><i class="fas fa-shopping-cart cart-icon"></i></a>
+                
             </div>
         </div>
         <nav id="site-navigation" class="main-navigation">
