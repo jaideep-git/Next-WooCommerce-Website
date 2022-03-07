@@ -206,6 +206,19 @@ function next_scripts() {
 add_action( 'wp_enqueue_scripts', 'next_scripts' );
 
 /**
+ * Custom Fonts
+ * font-family: 'Montserrat', sans-serif;
+*/
+function enqueue_custom_fonts() {
+	if(!is_admin()) {
+		wp_register_style('montserrat', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+		wp_enqueue_style('montserrat');
+	}
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_fonts');
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
