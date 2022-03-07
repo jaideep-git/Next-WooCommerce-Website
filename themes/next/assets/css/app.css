@@ -269,3 +269,45 @@ li{
   height:35px;
   border:none;
 }
+
+#submit a{
+  color:#fff;
+}
+
+.blog-post-img img{
+  width:95%;
+}
+.blog-post-img{
+  padding-top: 0.3rem;
+}
+.entry-title{
+  margin: 0;
+}
+.entry-title h4{
+  margin: 0;
+}
+.blog-post-content{
+  margin-top: 0.5rem;
+}
+.blog-post-date{
+  margin-top: 0.3rem;
+}
+.blog-single-post{
+  margin-bottom: 3.5rem;
+}
+.next-sidebar{
+  border-left: 1px solid #DFDFDF ;
+  padding: 0 1.5rem;
+}
+.page-heading{
+  margin-bottom:2rem
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+  color:white;
+  background:#5677FC;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+  color:white;
+  background:#5677FC;
+}
