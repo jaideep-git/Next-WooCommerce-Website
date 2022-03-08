@@ -311,3 +311,9 @@ li{
   color:white;
   background:#5677FC;
 }
+.post-date{
+  margin-top:0.4rem;
+}
+.attachment-woocommerce_thumbnail{
+  width: 90%;
+}
