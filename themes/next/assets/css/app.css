@@ -235,10 +235,6 @@ footer{
   padding-top: 0;
 }
 
-li{
-  list-style: none;
-}
-
 /* Single Post */
 
 .post-img img{
@@ -313,4 +309,17 @@ li{
 }
 .post-date{
   margin-top:0.44rem;
+}
+
+.product {
+    height: 27rem;
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 3.8% 2.992em 0;
+    padding: 0;
+    position: relative;
+    width: 22.05%;
+    margin-left: 0;
 }
