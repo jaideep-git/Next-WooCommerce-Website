@@ -218,6 +218,11 @@ function enqueue_custom_fonts() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_custom_fonts');
 
+function wpdocs_custom_excerpt_length( $length ) {
+    return 30;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
 /**
  * Custom template tags for this theme.
  */
