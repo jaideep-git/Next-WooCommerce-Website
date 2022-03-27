@@ -219,7 +219,7 @@ function enqueue_custom_fonts() {
 add_action('wp_enqueue_scripts', 'enqueue_custom_fonts');
 
 function wpdocs_custom_excerpt_length( $length ) {
-    return 30;
+    return 3065;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
