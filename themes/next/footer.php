@@ -11,8 +11,36 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="grid-container grid-x">
+	<footer id="colophon" class="site-footer">  
+		<div class="">
+			<h3 class="recent-posts">Recent Posts</h3>
+			<div class="">
+				<?php
+					$test_args = array( 
+								'post_type' => 'post',         
+								'post_status'=> 'publish',         
+								'posts_per_page' => 3 );
+								
+						$test_query = new WP_Query($test_args); 
+						
+						if($test_query->have_posts()){         
+								while ($test_query->have_posts()){             
+										$test_query->the_post();  
+							?>
+							<div>
+								<?php
+									the_post_thumbnail( $size = ["300px","500px"], $attr = '' ); 
+								?>
+								<h5 class="query-heading"><a class="movie-title-home" href="<?php the_permalink() ?>"><?php the_title()?></a></h5>
+								<?php           
+									the_excerpt();
+								?>
+							</div>
+								<?php
+								}               
+						} 
+				?>  
+			</div>
 			<div class="cell large-3 coloumn1">
 			<?php the_custom_logo(); ?>
 				<?php dynamic_sidebar( 'footer Widget 1' );?>
