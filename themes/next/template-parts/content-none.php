@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="no-results not-found">
+<section class="no-results not-found grid-container">
 	<header class="page-header">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'next' ); ?></h1>
 	</header><!-- .page-header -->
