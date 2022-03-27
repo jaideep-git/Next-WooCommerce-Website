@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="blog-single-post">
-	<section class="grid-x">
+	<section class="grid-x grid-margin-x">
 		<div class="blog-post-img cell large-3">
 			<?php next_post_thumbnail(); ?>
 		</div>
