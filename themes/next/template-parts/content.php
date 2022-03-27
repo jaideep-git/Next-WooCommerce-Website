@@ -15,9 +15,9 @@
 			<?php
 			if ( !is_singular('product') ) {
 				if ( is_singular() ) :
-					the_title( '<h2 class="entry-title">', '</h2>' );
+					the_title( '<h3 class="entry-title">', '</h3>' );
 				else :
-					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+					the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
 				endif;
 			}
 			
