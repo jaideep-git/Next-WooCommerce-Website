@@ -59,12 +59,14 @@
         <nav id="site-navigation" class="main-navigation">
             <div class="grid-container">
                 <?php
-                wp_nav_menu(
-                    array(
-                        'theme_location' => 'menu-primary',
-                        'menu_id'        => 'primary-menu',
-                    )
-                );
+                if ( has_nav_menu('menu-primary') ){
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'menu-primary',
+                            'menu_id'        => 'primary-menu',
+                        )
+                    );
+                }
                 ?>
             </div>
 		</nav><!-- #site-navigation -->
