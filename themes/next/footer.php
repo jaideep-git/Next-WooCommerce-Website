@@ -12,9 +12,9 @@
 ?>
 
 	<footer id="colophon" class="site-footer">  
-		<div class="">
+		<div class="grid-container grid-x">
 			<h3 class="recent-posts">Recent Posts</h3>
-			<div class="">
+			<div class="grid-x grid-margin-x">
 				<?php
 					$test_args = array( 
 								'post_type' => 'post',         
@@ -27,7 +27,7 @@
 								while ($test_query->have_posts()){             
 										$test_query->the_post();  
 							?>
-							<div>
+							<div class="cell large-3">
 								<?php
 									the_post_thumbnail( $size = ["300px","500px"], $attr = '' ); 
 								?>
