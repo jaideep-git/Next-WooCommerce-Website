@@ -3,7 +3,12 @@
 body{
   font-family: 'Montserrat', sans-serif;
 }
-/* header top-bar  */
+
+/******* Secondary Navbar  ********/
+.top-bar{
+  width: 100%;
+  padding: 0;
+}
 .social-icons{
   display: flex;
   gap:2rem;
@@ -16,12 +21,12 @@ body{
   color: #3D3D3D;
   font-size: 21px;
 }
-.top-bar{
-  width: 100%;
-  padding: 0;
-}
 
-/* Main Header */
+/******** Main Navbar ********/
+.main-nav{
+  display: flex;
+  justify-content:space-between;
+}
 .search-bar{
   display: flex;
   gap: 2rem;
@@ -50,10 +55,10 @@ body{
   background: #5677FC;
 }
 .logo img{
-  width:60%;
+  width:80%;
 }
 
-/* Main Menu */
+/******** Primary nav menu ********/
 .main-navigation a{
   color: #fff;
 }
@@ -84,122 +89,54 @@ body{
   padding-top:5px;
   color: #fff;
   width:100%;
-  height: 4rem;
   background:#5677FC
 }
 .site-header{
   margin-bottom:2rem;
 }
-/* Feature Img Home */
+
+/******** Home page Featured Image ********/
 .feature-img{
   width: 100%;
   height: 100%;
 }
-
 .feature-img img{
   width: 100%;
 }
-
 .site-main{
   height: 100%;
 }
 
-/* Popular Categories */
+/******** Home page popular categories ********/
 .popular-categories{
   display: flex;
   gap: 1rem;
   margin: 5rem 0;
-
 }
-
 .popular-categories div{
   width: 400px;
 }
-
 .popular-categories div img{
   width: 100%;
 }
-
 .advertisement{
   width: 100%;
 }
-
 .advertisement img{
   width: 100%;
 }
-
 .wp-block-social-links{
   margin: 0;
   padding: 0;
 }
 
-/* Footer */
-footer{
-  margin-top:5rem;
-  padding: 2rem 0 1rem 0;
-  border-top: 1px solid #DFDFDF;
-  background: #F5F5F5;
-}
-
-.coloumn1 img{
-  width: 50%;
-}
-.coloumn{
-  margin-top:20px;
-}
-.footer-info{
-  display: flex;
-  gap: 1rem;
-}
-
-.menu-footer-menu-1 li{
-  list-style: none;
-}
-#menu-footer-menu-1 li a{
-  color: black;
-  padding: 0.8rem 0;
-}
-#menu-footer-menu-2 li a{
-  color: black;
-  padding: 0.8rem 0;
-}
-#menu-footer-menu-3 li a{
-  color: black;
-  padding: 0.8rem 0;
-}
-.coloumn ul{
-  margin: 0;
-}
-
-.coloumn ul{
-  display: flex;
-  flex-direction: column;
-}
-.footer-head{
-  font-weight: 400;
-}
-.footer-icon{
-  color: #3D3D3D;
-  font-size:17px;
-  margin-right:7px
-}
-.footer-widget{
-  font-size: 17px;
-}
-
-.footer-copyright{
-  margin-top:4rem;
-}
-
-
-/* Contact */
+/******** Contact Us Page ********/
 #nf-field-8{
   background-color:#3452FF;
   height:3rem;
   color:#fff;
   border: none;
 }
-
 .wp-block-post div{
   padding: 0 !important;
 }
@@ -215,17 +152,14 @@ footer{
   font-size:23px;
   font-weight:500px
 } 
-
 .wp-block-column ul{
   margin: 0;
   padding: 0 ;
 }
-
 .wp-block-query ul{
   margin: 0;
   padding: 0 ;
 }
-
 .wp-block-table table tbody tr td{
   margin-top: 0;
   padding-top: 0;
@@ -235,8 +169,7 @@ footer{
   padding-top: 0;
 }
 
-/* Single Post */
-
+/******** Single Post Style ********/
 .post-img img{
   width:70%;
 }
@@ -265,11 +198,9 @@ footer{
   height:35px;
   border:none;
 }
-
 #submit a{
   color:#fff;
 }
-
 .blog-post-img img{
   width:95%;
 }
@@ -301,11 +232,64 @@ footer{
 .page-heading{
   margin-bottom:2rem
 }
+
+/******** Site Footer ********/
+footer{
+  margin-top:5rem;
+  padding: 2rem 0 1rem 0;
+  border-top: 1px solid #DFDFDF;
+  background: #F5F5F5;
+}
+.coloumn1 img{
+  width: 50%;
+}
+.coloumn{
+  margin-top:20px;
+}
+.footer-info{
+  display: flex;
+  gap: 1rem;
+}
+.menu-footer-menu-1 li{
+  list-style: none;
+}
+#menu-footer-menu-1 li a{
+  color: black;
+  padding: 0.8rem 0;
+}
+#menu-footer-menu-2 li a{
+  color: black;
+  padding: 0.8rem 0;
+}
+#menu-footer-menu-3 li a{
+  color: black;
+  padding: 0.8rem 0;
+}
+.coloumn ul{
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+}
+.footer-head{
+  font-weight: 400;
+}
+.footer-icon{
+  color: #3D3D3D;
+  font-size:17px;
+  margin-right:7px
+}
+.footer-widget{
+  font-size: 17px;
+}
+.footer-copyright{
+  margin-top:4rem;
+}
+
+/******** WooCommerce styles  ********/
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
   color:white;
   background:#5677FC;
 }
-
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
   color:white;
   background:#5677FC;
@@ -313,11 +297,11 @@ footer{
 .post-date{
   margin-top:0.44rem;
 }
-
 .offer-page{
   margin-top:1.5rem
 }
 
+/******** Wp_query style ********/
 .query-heading{
   margin-top:1rem
 }
