@@ -54,7 +54,7 @@
             </div>
             <div class="search-bar">
                 <ul class="menu-bar">
-                    <?php aws_get_search_form( true ); // search Bar 
+                    <?php aws_get_search_form( true ); // woocommerce search bar plugin
                     ?> 
                 </ul>
                 <!-- Cart -->

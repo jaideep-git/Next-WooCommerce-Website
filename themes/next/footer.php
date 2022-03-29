@@ -11,12 +11,12 @@
 ?>
 
 <footer id="colophon" class="site-footer">  
-    <div class="grid-container grid-x">
+    <div class="grid-container grid-x ">
 
         <!--------- WP_Query Content --------->
         <h3 class="recent-posts">Recent Posts</h3>
 
-        <div class="grid-x grid-margin-x">    
+        <div class="grid-x grid-margin-x wp-query">    
             <!-- Custom WP_Query -->
             <?php
                 $test_args = array( 
@@ -55,24 +55,24 @@
         <!--------- Footer Content --------->
 
         <!-- Footer Column 1 -->
-        <div class="cell large-3 coloumn1">
+        <div class="cell large-3 coloumn1 small-6">
             <?php the_custom_logo(); ?>
             <?php dynamic_sidebar( 'footer Widget 1' );?>
             <?php dynamic_sidebar( 'social-media-links' );?>
         </div>
             
         <!-- Footer Column 2 -->
-        <div class="cell large-3 coloumn">
+        <div class="cell large-3 coloumn small-6">
             <?php dynamic_sidebar( 'footer Widget 2' );?>
         </div>
         
         <!-- Footer Column 3 -->
-        <div class="cell large-3 coloumn">
+        <div class="cell large-3 coloumn small-6">
             <?php dynamic_sidebar( 'footer Widget 3' );?>
         </div>
             
         <!-- Footer Column 4 -->
-        <div class="cell large-3 coloumn">
+        <div class="cell large-3 coloumn small-6">
             <?php dynamic_sidebar( 'footer Widget 4' );?>
         </div>
     </div>

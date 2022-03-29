@@ -308,5 +308,8 @@ footer{
 .recent-posts{
   margin-bottom:1rem
 }
+.wp-query{
+  border-bottom: 5px solid 	#F0F0F0;
+}
 
 
